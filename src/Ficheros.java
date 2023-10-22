@@ -14,7 +14,6 @@ public class Ficheros {
     public static void listarArchivosCarpetas(String rutaCarpeta) {
         File carpeta = new File(rutaCarpeta);
         File[] archivos = carpeta.listFiles();
-        ArrayList<String> contenido = new ArrayList<String>();
         System.out.println("Listando archivos y carpetas en " + carpeta.getAbsolutePath() + ":");
         for (File archivo : archivos) {
             System.out.println(archivo.getName());
